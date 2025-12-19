@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Return Policy - A complete digital return management system. Fast, reliable, and hassle-free returns for online shoppers and e-commerce businesses.">
+    <meta name="keywords"
+        content="return policy, return management, e-commerce returns, product returns, refund, pickup service">
+    <meta name="author" content="ReturnPolicy Team">
+    <title>Return Policy - Smart Return Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-icon">
+                <i class="fas fa-rotate-left"></i>
+            </div>
+            <div class="preloader-text">Loading<span class="dots"></span></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-rotate-left"></i>
+                <span>Return<span class="highlight">Policy</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#return-form">Submit Return</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"><i class="fas fa-box"></i></div>
+                <div class="shape shape-2"><i class="fas fa-truck"></i></div>
+                <div class="shape shape-3"><i class="fas fa-check-circle"></i></div>
+                <div class="shape shape-4"><i class="fas fa-undo"></i></div>
+            </div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge"><i class="fas fa-bolt"></i> Smart Returns Made Simple</span>
+                <h1 class="hero-title">Effortless <span class="gradient-text">Return</span> Management System</h1>
+                <p class="hero-description">A complete digital system for easy return requests, doorstep pickup,
+                    warehouse verification, and real-time tracking. Experience hassle-free returns like never before.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#return-form" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Submit a
+                        Return</a>
+                    <a href="#how-it-works" class="btn btn-secondary"><i class="fas fa-play-circle"></i> See How It
+                        Works</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Customer Satisfaction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="24">0</span><span class="stat-suffix">h</span>
+                        <span class="stat-label">Average Processing</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Business Partners</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="50000">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Returns Processed</span>
+                    </div>
+                </div>
+                <div class="hero-trust">
+                    <span class="trust-label">Trusted by leading brands:</span>
+                    <div class="trust-logos">
+                        <div class="trust-logo"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="trust-logo"><i class="fas fa-store"></i></div>
+                        <div class="trust-logo"><i class="fas fa-cart-shopping"></i></div>
+                        <div class="trust-logo"><i class="fas fa-shop"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card main-card">
+                    <div class="card-header"><i class="fas fa-box-open"></i><span>Return Request</span></div>
+                    <div class="card-status">
+                        <div class="status-dot success"></div><span>Pickup Scheduled</span>
+                    </div>
+                    <div class="card-progress">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                    <div class="card-info"><span>Order #RET-2024</span><span class="card-date">Today</span></div>
+                </div>
+                <div class="hero-card floating-card card-1"><i class="fas fa-truck"></i><span>Pickup Confirmed</span>
+                </div>
+                <div class="hero-card floating-card card-2"><i class="fas fa-check-circle"></i><span>Verified</span>
+                </div>
+                <div class="hero-card floating-card card-3"><i class="fas fa-wallet"></i><span>Refund Initiated</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Simple Process</span>
+                <h2 class="section-title">How It <span class="gradient-text">Works</span></h2>
+                <p class="section-description">Our streamlined 7-step process makes returns completely hassle-free. From
+                    submission to refund, we've got you covered.</p>
+            </div>
+            <div class="steps-timeline">
+                <div class="timeline-line"></div>
+                <div class="steps-container">
+                    <div class="step" data-step="1">
+                        <div class="step-icon"><i class="fas fa-globe"></i></div>
+                        <div class="step-content">
+                            <h3>Visit Website</h3>
+                            <p>Open our return portal from any device - desktop, tablet, or mobile</p>
+                        </div>
+                        <div class="step-number">01</div>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-icon"><i class="fas fa-edit"></i></div>
+                        <div class="step-content">
+                            <h3>Enter Details</h3>
+                            <p>Fill in your order information and product details for verification</p>
+                        </div>
+                        <div class="step-number">02</div>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-icon"><i class="fas fa-question-circle"></i></div>
+                        <div class="step-content">
+                            <h3>Select Reason</h3>
+                            <p>Choose your return reason from our comprehensive dropdown menu</p>
+                        </div>
+                        <div class="step-number">03</div>
+                    </div>
+                    <div class="step" data-step="4">
+                        <div class="step-icon"><i class="fas fa-truck-pickup"></i></div>
+                        <div class="step-content">
+                            <h3>Schedule Pickup</h3>
+                            <p>Select convenient pickup or drop-off at your nearest location</p>
+                        </div>
+                        <div class="step-number">04</div>
+                    </div>
+                    <div class="step" data-step="5">
+                        <div class="step-icon"><i class="fas fa-search"></i></div>
+                        <div class="step-content">
+                            <h3>Product Verification</h3>
+                            <p>Our team inspects and verifies the product condition</p>
+                        </div>
+                        <div class="step-number">05</div>
+                    </div>
+                    <div class="step" data-step="6">
+                        <div class="step-icon"><i class="fas fa-shipping-fast"></i></div>
+                        <div class="step-content">
+                            <h3>Return to Seller</h3>
+                            <p>Item is securely packaged and sent back to the brand</p>
+                        </div>
+                        <div class="step-number">06</div>
+                    </div>
+                    <div class="step" data-step="7">
+                        <div class="step-icon"><i class="fas fa-money-bill-wave"></i></div>
+                        <div class="step-content">
+                            <h3>Get Refund</h3>
+                            <p>Receive your refund or replacement within 3-5 business days</p>
+                        </div>
+                        <div class="step-number">07</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2 class="section-title">Complete <span class="gradient-text">Solution</span></h2>
+                <p class="section-description">Everything you need for seamless return management under one roof.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card featured">
+                    <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Return-Policy Website</h3>
+                    <p>Simple return steps, easy submissions, auto-generated pickup codes. Our intuitive interface makes
+                        returns a breeze.</p>
+                    <div class="feature-tag">Core Platform</div>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> User-friendly interface</li>
+                        <li><i class="fas fa-check"></i> Real-time status updates</li>
+                        <li><i class="fas fa-check"></i> Secure data handling</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-warehouse"></i></div>
+                    <h3>Warehouse Management</h3>
+                    <p>Collect, store, and return items to sellers with full tracking and inventory management.</p>
+                    <div class="feature-stats">
+                        <div class="feature-stat">
+                            <span class="feature-stat-number">10+</span>
+                            <span class="feature-stat-label">Locations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-truck"></i></div>
+                    <h3>Doorstep Pickup</h3>
+                    <p>Convenient pickup right at your location. No need to visit any center.</p>
+                    <div class="feature-stats">
+                        <div class="feature-stat">
+                            <span class="feature-stat-number">Free</span>
+                            <span class="feature-stat-label">Pickup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>Verification & Repacking</h3>
+                    <p>Professional inspection ensures quality control before return to seller.</p>
+                    <div class="feature-stats">
+                        <div class="feature-stat">
+                            <span class="feature-stat-number">100%</span>
+                            <span class="feature-stat-label">Quality Check</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Monitor your return journey from pickup to completion with live updates.</p>
+                    <div class="feature-stats">
+                        <div class="feature-stat">
+                            <span class="feature-stat-number">24/7</span>
+                            <span class="feature-stat-label">Tracking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Secure Processing</h3>
+                    <p>End-to-end secure handling with insurance coverage for your peace of mind.</p>
+                    <div class="feature-stats">
+                        <div class="feature-stat">
+                            <span class="feature-stat-number">Insured</span>
+                            <span class="feature-stat-label">Shipping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why Choose Us</span>
+                <h2 class="section-title">The <span class="gradient-text">Difference</span></h2>
+            </div>
+            <div class="ps-grid">
+                <div class="problem-card">
+                    <div class="ps-header"><i class="fas fa-exclamation-triangle"></i>
+                        <h3>The Problem</h3>
+                    </div>
+                    <p>Traditional returns are slow, confusing, and manually managed, leading to frustration for both
+                        customers and businesses.</p>
+                    <ul class="problem-list">
+                        <li><i class="fas fa-times"></i> Long processing delays (7-14 days)</li>
+                        <li><i class="fas fa-times"></i> Manual errors and lost items</li>
+                        <li><i class="fas fa-times"></i> Poor customer satisfaction</li>
+                        <li><i class="fas fa-times"></i> No real-time tracking</li>
+                        <li><i class="fas fa-times"></i> Complicated procedures</li>
+                    </ul>
+                </div>
+                <div class="solution-card">
+                    <div class="ps-header"><i class="fas fa-lightbulb"></i>
+                        <h3>Our Solution</h3>
+                    </div>
+                    <p>Complete automated return management system that handles everything from pickup to refund
+                        processing.</p>
+                    <ul class="solution-list">
+                        <li><i class="fas fa-check"></i> Fast processing (24-48 hours)</li>
+                        <li><i class="fas fa-check"></i> Automated tracking & verification</li>
+                        <li><i class="fas fa-check"></i> 98% customer satisfaction rate</li>
+                        <li><i class="fas fa-check"></i> Real-time status updates</li>
+                        <li><i class="fas fa-check"></i> Simple 3-click return process</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Customer Reviews</span>
+                <h2 class="section-title">What Our <span class="gradient-text">Customers Say</span></h2>
+                <p class="section-description">Join thousands of satisfied customers who trust us with their returns.
+                </p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">The easiest return process I've ever experienced! Got my refund in just
+                        2 days. Amazing service!</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Sarah Ahmed</h4>
+                            <span>Verified Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">As an e-commerce business owner, this has saved me countless hours. The
+                        automation is fantastic!</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Ali Hassan</h4>
+                            <span>Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">Real-time tracking gave me peace of mind. I knew exactly where my return
+                        was at every stage.</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Fatima Khan</h4>
+                            <span>Verified Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-btn prev-btn" aria-label="Previous testimonial"><i
+                        class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="testimonial-btn next-btn" aria-label="Next testimonial"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Return Form Section -->
+    <section class="return-form-section" id="return-form">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get Started</span>
+                <h2 class="section-title">Submit Your <span class="gradient-text">Return</span></h2>
+                <p class="section-description">Fill out the form below and we'll handle the rest. It only takes a few
+                    minutes!</p>
+            </div>
+            <div class="form-container">
+                <div class="form-progress">
+                    <div class="progress-step active" data-step="1"><span>1</span>
+                        <p>Details</p>
+                    </div>
+                    <div class="progress-step" data-step="2"><span>2</span>
+                        <p>Product</p>
+                    </div>
+                    <div class="progress-step" data-step="3"><span>3</span>
+                        <p>Delivery</p>
+                    </div>
+                </div>
+                <form id="returnForm" class="return-form">
+                    <!-- Step 1: Personal Details -->
+                    <div class="form-step active" data-step="1">
+                        <h3 class="form-step-title"><i class="fas fa-user-circle"></i> Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName"><i class="fas fa-user"></i> Full Name</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderId"><i class="fas fa-receipt"></i> Order ID</label>
+                                <input type="text" id="orderId" name="orderId" placeholder="ORD-12345" required>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-next">Next Step <i
+                                class="fas fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Step 2: Product Details -->
+                    <div class="form-step" data-step="2">
+                        <h3 class="form-step-title"><i class="fas fa-box"></i> Product Information</h3>
+                        <div class="form-group">
+                            <label for="productName"><i class="fas fa-box"></i> Product Name</label>
+                            <input type="text" id="productName" name="productName"
+                                placeholder="Product you want to return" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="productQuantity"><i class="fas fa-hashtag"></i> Quantity</label>
+                                <input type="number" id="productQuantity" name="productQuantity" min="1" value="1"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="purchaseDate"><i class="fas fa-calendar"></i> Purchase Date</label>
+                                <input type="date" id="purchaseDate" name="purchaseDate" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="returnReason"><i class="fas fa-question-circle"></i> Return Reason</label>
+                            <select id="returnReason" name="returnReason" required>
+                                <option value="">Select a reason</option>
+                                <option value="defective">Defective Product</option>
+                                <option value="wrong-item">Wrong Item Received</option>
+                                <option value="not-as-described">Not as Described</option>
+                                <option value="size-issue">Size/Fit Issue</option>
+                                <option value="changed-mind">Changed My Mind</option>
+                                <option value="damaged">Damaged in Shipping</option>
+                                <option value="quality">Quality Not Satisfactory</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo"><i class="fas fa-comment-alt"></i> Additional Information
+                                (Optional)</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="3"
+                                placeholder="Any additional details about your return..."></textarea>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-secondary btn-prev"><i class="fas fa-arrow-left"></i>
+                                Previous</button>
+                            <button type="button" class="btn btn-primary btn-next">Next Step <i
+                                    class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Delivery Options -->
+                    <div class="form-step" data-step="3">
+                        <h3 class="form-step-title"><i class="fas fa-truck"></i> Delivery Method</h3>
+                        <div class="form-group">
+                            <label><i class="fas fa-truck"></i> Preferred Return Method</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="pickupMethod" value="pickup" checked>
+                                    <span class="radio-custom"></span>
+                                    <div class="radio-content">
+                                        <span class="radio-title"><i class="fas fa-home"></i> Doorstep Pickup</span>
+                                        <span class="radio-desc">We'll pick up from your location</span>
+                                    </div>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="pickupMethod" value="dropoff">
+                                    <span class="radio-custom"></span>
+                                    <div class="radio-content">
+                                        <span class="radio-title"><i class="fas fa-warehouse"></i> Warehouse
+                                            Drop-off</span>
+                                        <span class="radio-desc">Drop at nearest collection point</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pickupDate"><i class="fas fa-calendar-alt"></i> Preferred Date</label>
+                                <input type="date" id="pickupDate" name="pickupDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pickupTime"><i class="fas fa-clock"></i> Preferred Time</label>
+                                <select id="pickupTime" name="pickupTime" required>
+                                    <option value="">Select time slot</option>
+                                    <option value="9-12">9:00 AM - 12:00 PM</option>
+                                    <option value="12-15">12:00 PM - 3:00 PM</option>
+                                    <option value="15-18">3:00 PM - 6:00 PM</option>
+                                    <option value="18-21">6:00 PM - 9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address"><i class="fas fa-map-marker-alt"></i> Complete Address</label>
+                            <textarea id="address" name="address" rows="3"
+                                placeholder="House/Flat No., Street, Area, City, Postal Code" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="termsAgree" required>
+                                <span class="checkbox-custom"></span>
+                                <span>I agree to the <a href="#" class="link">Terms & Conditions</a> and <a href="#"
+                                        class="link">Return Policy</a></span>
+                            </label>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-secondary btn-prev"><i class="fas fa-arrow-left"></i>
+                                Previous</button>
+                            <button type="submit" class="btn btn-primary btn-submit"><i class="fas fa-paper-plane"></i>
+                                Submit Return Request</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="form-success" id="formSuccess">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="success-confetti"></div>
+                    </div>
+                    <h3>Return Request Submitted Successfully!</h3>
+                    <p>We'll send you a confirmation email with pickup details shortly.</p>
+                    <div class="tracking-info">
+                        <div class="tracking-code">
+                            <span>Tracking Code:</span>
+                            <strong id="trackingCode">RET-2024-XXXXX</strong>
+                            <button class="copy-btn" onclick="copyTrackingCode()"><i class="fas fa-copy"></i></button>
+                        </div>
+                        <p class="tracking-note">Save this code to track your return status</p>
+                    </div>
+                    <div class="success-next-steps">
+                        <h4>What's Next?</h4>
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> Check your email for confirmation</li>
+                            <li><i class="fas fa-box"></i> Pack your item securely</li>
+                            <li><i class="fas fa-truck"></i> Wait for pickup or drop off at center</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-secondary" onclick="resetForm()"><i class="fas fa-redo"></i> Submit Another
+                        Return</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Market -->
+    <section class="target-market" id="target-market">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Who We Serve</span>
+                <h2 class="section-title">Our <span class="gradient-text">Target Market</span></h2>
+                <p class="section-description">Designed for everyone involved in the e-commerce ecosystem.</p>
+            </div>
+            <div class="market-grid">
+                <div class="market-card">
+                    <div class="market-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>Online Shoppers</h3>
+                    <p>Hassle-free returns for individuals who shop online regularly</p>
+                    <ul class="market-benefits">
+                        <li><i class="fas fa-check"></i> Easy return process</li>
+                        <li><i class="fas fa-check"></i> Free doorstep pickup</li>
+                    </ul>
+                </div>
+                <div class="market-card">
+                    <div class="market-icon"><i class="fas fa-store"></i></div>
+                    <h3>E-commerce Companies</h3>
+                    <p>Streamlined return process for better customer experience</p>
+                    <ul class="market-benefits">
+                        <li><i class="fas fa-check"></i> Reduce return costs</li>
+                        <li><i class="fas fa-check"></i> Automated processing</li>
+                    </ul>
+                </div>
+                <div class="market-card">
+                    <div class="market-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Small Businesses</h3>
+                    <p>No need to set up your own return center</p>
+                    <ul class="market-benefits">
+                        <li><i class="fas fa-check"></i> Cost effective</li>
+                        <li><i class="fas fa-check"></i> Scale as you grow</li>
+                    </ul>
+                </div>
+                <div class="market-card">
+                    <div class="market-icon"><i class="fas fa-truck-loading"></i></div>
+                    <h3>Delivery Companies</h3>
+                    <p>Integrated return management solutions</p>
+                    <ul class="market-benefits">
+                        <li><i class="fas fa-check"></i> API integration</li>
+                        <li><i class="fas fa-check"></i> Real-time sync</li>
+                    </ul>
+                </div>
+                <div class="market-card">
+                    <div class="market-icon"><i class="fas fa-users"></i></div>
+                    <h3>Young Generation</h3>
+                    <p>Digital-first solutions for tech-savvy shoppers</p>
+                    <ul class="market-benefits">
+                        <li><i class="fas fa-check"></i> Mobile friendly</li>
+                        <li><i class="fas fa-check"></i> Quick process</li>
+                    </ul>
+                </div>
+                <div class="market-card">
+                    <div class="market-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Online Customers</h3>
+                    <p>Transparent return journey for all buyers</p>
+                    <ul class="market-benefits">
+                        <li><i class="fas fa-check"></i> Track anytime</li>
+                        <li><i class="fas fa-check"></i> 24/7 support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Help Center</span>
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <p class="section-description">Find answers to common questions about our return process.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does the return process take?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our return process typically takes 24-48 hours from pickup to warehouse arrival. Refunds are
+                            processed within 3-5 business days after verification.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is doorstep pickup really free?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Doorstep pickup is completely free for all eligible returns. We believe in making
+                            returns as convenient as possible for our customers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What items cannot be returned?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Items that cannot be returned include: perishable goods, intimate apparel, customized
+                            products, hazardous materials, and items marked as final sale. Please check the seller's
+                            specific return policy.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How can I track my return?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>After submitting your return request, you'll receive a unique tracking code. Use this code on
+                            our tracking page to get real-time updates on your return status.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What if my item gets damaged during return?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All returns are insured during transit. If your item gets damaged during the return process,
+                            our insurance will cover the full value of the product.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I change my pickup date/time?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can reschedule your pickup up to 2 hours before the scheduled time. Simply contact
+                            our support team or use the tracking portal to make changes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-orb cta-orb-1"></div>
+            <div class="cta-orb cta-orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Simplify Your Returns?</h2>
+                <p>Join thousands of satisfied customers and businesses who trust ReturnPolicy for hassle-free returns.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#return-form" class="btn btn-primary btn-large"><i class="fas fa-rocket"></i> Start Your
+                        Return Now</a>
+                    <a href="#contact" class="btn btn-secondary btn-large"><i class="fas fa-phone"></i> Contact
+                        Sales</a>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature"><i class="fas fa-check-circle"></i> Free Pickup</div>
+                    <div class="cta-feature"><i class="fas fa-check-circle"></i> Fast Processing</div>
+                    <div class="cta-feature"><i class="fas fa-check-circle"></i> Insured Returns</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get in Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+                <p class="section-description">Have questions? We're here to help 24/7.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h3>Call Us</h3>
+                        <p>0314 1377208</p>
+                        <span>Mon-Sat: 9AM - 9PM</span>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email Us</h3>
+                        <p>ahmadwrites04@gmail.com</p>
+                        <span>We reply within 2 hours</span>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Live Chat</h3>
+                        <p>Chat with our team</p>
+                        <span>Available 24/7</span>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Visit Us</h3>
+                        <p>Lahore, Pakistan</p>
+                        <span>Main Office</span>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName"><i class="fas fa-user"></i> Name</label>
+                                <input type="text" id="contactName" name="contactName" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail"><i class="fas fa-envelope"></i> Email</label>
+                                <input type="email" id="contactEmail" name="contactEmail" placeholder="your@email.com"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject"><i class="fas fa-tag"></i> Subject</label>
+                            <select id="contactSubject" name="contactSubject" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="return">Return Issue</option>
+                                <option value="refund">Refund Status</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage"><i class="fas fa-comment"></i> Message</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="5"
+                                placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo"><i class="fas fa-rotate-left"></i><span>Return<span
+                                class="highlight">Policy</span></span></a>
+                    <p>Complete digital return management system. Making returns simple, fast, and hassle-free for
+                        everyone.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#return-form">Submit Return</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Doorstep Pickup</a></li>
+                        <li><a href="#">Warehouse Drop-off</a></li>
+                        <li><a href="#">Real-Time Tracking</a></li>
+                        <li><a href="#">Refund Processing</a></li>
+                        <li><a href="#">Business Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ReturnPolicy. All rights reserved.</p>
+                <p class="team-credit">Developed with <i class="fas fa-heart"></i> by: Muhammad Ahmad, Ayyan Hayat,
+                    Rehmat Bibi & Rohaan Arshad</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gemini Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+        <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chat">
+            <i class="fas fa-comments"></i>
+            <span class="chatbot-badge">AI</span>
+        </button>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div>
+                        <h4>ReturnPolicy AI</h4>
+                        <span class="chatbot-status"><span class="status-indicator"></span> Online</span>
+                    </div>
+                </div>
+                <button class="chatbot-close" id="chatbotClose" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chat-message bot">
+                    <div class="message-avatar"><i class="fas fa-robot"></i></div>
+                    <div class="message-content">
+                        <p>Hi! 👋 I'm your ReturnPolicy AI assistant powered by Gemini. How can I help you with your
+                            returns today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-suggestions">
+                <button class="suggestion-chip" data-message="How do I start a return?">Start a return</button>
+                <button class="suggestion-chip" data-message="What is the refund policy?">Refund policy</button>
+                <button class="suggestion-chip" data-message="Track my return status">Track return</button>
+            </div>
+            <form class="chatbot-input" id="chatbotForm">
+                <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off">
+                <button type="submit" id="chatSend" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
